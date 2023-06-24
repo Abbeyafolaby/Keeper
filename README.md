@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Keeper Note App
 
-## Getting Started
+The Keeper Note App is a web application built with Next.js, TypeScript, and Tailwind CSS. It allows users to create, edit, and manage notes in a simple and intuitive interface.
 
-First, run the development server:
+## Features
+
+- Create new notes with a title and content.
+- Edit existing notes to update the title or content.
+- Delete notes to remove them from the app.
+- Responsive design for a seamless experience on different devices.
+- Data persistence using the browser's local storage.
+
+## Demo
+
+A live demo of the Keeper Note App is available [here](https://keeper-mu.vercel.app/).
+
+## Screenshots
+
+Include one or more screenshots of your app to showcase its interface and functionality. For example:
+
+![Screenshot 1](/public/Screenshot%20(77).png)
+![Screenshot 2](/public/Screenshot%20(78).png)
+
+## Installation
+
+To run the Keeper Note App locally, follow these steps:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Abbeyafolaby/Keeper.git
+```
+
+2. Install the dependencies:
+
+```bash
+cd Keeper
+npm install
+```
+
+3. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open your browser and visit [http://localhost:3000](http://localhost:3000) to access the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies Used
 
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello) is an endpoint that uses [Route Handlers](https://beta.nextjs.org/docs/routing/route-handlers). This endpoint can be edited in `app/api/hello/route.ts`.
+- Next.js
+- TypeScript
+- Tailwind CSS
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Contributing
 
-## Learn More
+Contributions to the Keeper Note App are welcome! If you would like to contribute, please follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes and push your branch to your forked repository.
+4. Submit a pull request to the main repository.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Acknowledgments
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- The Keeper Note App was inspired by the Google Keep app.

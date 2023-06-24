@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <header className="bg-[#f5ba13] my-auto mx-[-16px] py-4 px-8 shadow-md flex items-center text-white">
-      <h1 className=" font-normal text-2xl mr-auto">Keepers</h1>
+      <h1 className=" font-normal text-2xl mr-auto">Keeper</h1>
       <p className="text-l">{currentTime}</p>
     </header>
   );
