@@ -1,9 +1,31 @@
-import React from "react";
+"use client"
+import React, { useState, useEffect } from "react";
 
-const Header = ()  => {
+const Header = () => {
+  const [currentTime, setCurrentTime] = useState<string>("");
+
+  useEffect(() => {
+    const time = setInterval(() => {
+      setCurrentTime(getCurrentTime());
+    }, 1000);
+
+    return () => {
+      clearInterval(time);
+    };
+  }, []);
+
+  const getCurrentTime = (): string => {
+    const currentTime = new Date();
+    const hours = currentTime.getHours().toString().padStart(2, "0");
+    const minutes = currentTime.getMinutes().toString().padStart(2, "0");
+
+    return `${hours}:${minutes}`;
+  };
+
   return (
-    <header className="bg-[#f5ba13] my-auto mx-[-16px] py-4 px-8 shadow-md">
-      <h1 className="text-white font-normal text-2xl">Keepers</h1>
+    <header className="bg-[#f5ba13] my-auto mx-[-16px] py-4 px-8 shadow-md flex items-center text-white">
+      <h1 className=" font-normal text-2xl mr-auto">Keepers</h1>
+      <p className="text-l">{currentTime}</p>
     </header>
   );
 };

@@ -1,16 +1,16 @@
 import React from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Note from "./components/Note";
-import CreateArea from "./components/CreateArea";
+import Main from "./components/Main";
+
 
 export default function Home() {
+
   return (
-    <>
+    <div>
       <Header />
-      <CreateArea />
-      <Note key={1} title="Note title" content="Note content" />
+      <Main />
       <Footer />
-    </>
+    </div>
   );
 }
