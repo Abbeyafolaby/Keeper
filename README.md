@@ -16,8 +16,6 @@ A live demo of the Keeper Note App is available [here](https://keeper-mu.vercel.
 
 ## Screenshots
 
-Include one or more screenshots of your app to showcase its interface and functionality. For example:
-
 ![Screenshot 1](/public/Screenshot%20(77).png)
 ![Screenshot 2](/public/Screenshot%20(78).png)
 
