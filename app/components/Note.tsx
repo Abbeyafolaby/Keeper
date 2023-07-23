@@ -1,11 +1,5 @@
 import React from "react";
-
-type NoteProps = {
-  id: number;
-  title: string;
-  content: string;
-  onDelete: (id: number) => void;
-};
+import { NoteProps } from "@/types";
 
 const Note: React.FC<NoteProps> = (props) => {
     function handleClick() {

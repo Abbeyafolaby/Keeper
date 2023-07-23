@@ -1,14 +1,8 @@
 "use client"
 import React, { useState, ChangeEvent, FormEvent } from "react";
+import { Note } from "@/types";
+import { CreateAreaProps } from "@/types";
 
-interface Note {
-  title: string;
-  content: string;
-}
-
-interface CreateAreaProps {
-  onAdd: (note: Note) => void;
-}
 
 const CreateArea: React.FC<CreateAreaProps> = (props) => {
   const [displayForm, setDisplayForm] = useState(false);
